@@ -1,0 +1,1 @@
+AR.js marker generator
