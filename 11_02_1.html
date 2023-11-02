@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html>
+	<head>
+		<script src="aframe/aframe.min.js"></script>
+		<script src="arjs/aframe-ar.js"></script>
+		<script src="11_02_1.js"></script>
+	</head>
+	<body>
+		<a-scene arjs="debug: false;" embedded >
+			<a-marker registerevents id="A" type="pattern" url="assets/pattern-letterA.patt">
+				<a-sphere color="red" radius="0.15"></sphere>
+				<a-cylinder id="AB" color="yellow" height="1" radius="0.1" visible="false"></a-cylinder>
+			</a-marker>
+			<a-marker registerevents id="B" type="pattern" url="assets/pattern-letterB.patt">
+				<a-sphere color="red" radius="0.15"></sphere>
+				<a-cylinder id="BC" color="yellow" height="1" radius="0.1" visible="false"></a-cylinder>
+			</a-marker>
+			<a-marker registerevents id="C" type="pattern" url="assets/pattern-letterC.patt">
+				<a-sphere color="red" radius="0.15"></sphere>
+				<a-cylinder id="CD" color="yellow" height="1" radius="0.1" visible="false"></a-cylinder>
+			</a-marker>
+			<a-marker registerevents id="D" type="pattern" url="assets/pattern-letterD.patt">
+				<a-sphere color="red" radius="0.15"></sphere>
+				<a-cylinder id="DF" color="yellow" height="1" radius="0.1" visible="false"></a-cylinder>
+			</a-marker>
+			<a-marker registerevents id="F" type="pattern" url="assets/pattern-letterF.patt">
+				<a-sphere color="red" radius="0.15"></sphere>
+				<a-cylinder id="FG" color="yellow" height="1" radius="0.1" visible="false"></a-cylinder>
+			</a-marker>
+			<a-marker registerevents id="G" type="pattern" url="assets/pattern-letterG.patt">
+				<a-sphere color="red" radius="0.15"></sphere>
+				<a-cylinder id="GA" color="yellow" height="1" radius="0.1" visible="false"></a-cylinder>
+			</a-marker>
+			<a-entity camera></a-entity>
+			<a-entity run></a-entity>
+		</a-scene>
+	</body>
+</html>
